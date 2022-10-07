@@ -27,7 +27,6 @@ nav{
     position: relative;
     left: 80%;
     height: 62px;
-    grid-area: task;
 }
 #add_new:nth-child(2){
     display: flex;
