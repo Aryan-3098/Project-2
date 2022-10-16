@@ -79,13 +79,58 @@ nav{
 .sp1{
     font-size: 21px;
 }
-/* Popup box */
-#pop_box{
-    position: sticky;
+/* Overlay */
+#overlay{
+    display: flex;
+    z-index: 2;
 }
-#pop{
-    height: 15rem;
-    width: 7rem;
-    position: sticky;
+/* Popup box */
 
+#pop_box{
+    position: fixed;
+    bottom: 40%;
+    left: 40%;
+    height: 13rem;
+    width: 25rem;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#p_top{
+    grid-column: 1/-1;
+    align-items: center;
+}
+#p_mid{
+    grid-column: 1/-1;
+    margin: 0px 1rem;
+    align-items: center;
+}
+#p_mid input{
+    width: 100%;
+    padding: 4px;
+    padding-right: 0px;
+    color: black;
+    background-color: #c2c2c2;
+    border: 1px solid #c2c2c2;
+    border-radius: 2px;
+}
+#p_bottom{
+    grid-column: 5/5;
+    align-items: center;
+}
+#p_bottom input{
+    color: white;
+    background-color: #00A5EC;
+    border: 1px solid #00A5EC;
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 7rem;
+    margin-right: 20px;
+}
+@media only screen and (max-width:1400px){
+    #pop_box{
+        left: 35%;
+    }
 }

@@ -7,9 +7,13 @@
     <title>Project 2</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
         .box:hover{
             box-shadow:0px 0px 0px #757575;
+        }
+        #main{
+            cursor: default;
         }
     </style>
 </head>
@@ -18,12 +22,12 @@
         <nav>
             <h1 style="font-size: 42px;">Tasks <span style="color:#00A5EC ;">List</span></h1>
         </nav>
-        <div id="add_new"><a href="./second_page.html"> <span class="material-symbols-rounded" style="color: #00A5EC; font-size: 50px;" id="add_btn">
+        <div id="add_new"><a? href="./second_page.html"> <span class="material-symbols-rounded" style="color: #00A5EC; font-size: 50px;" id="add_btn">
             add_circle
-            </span></a>
+            </span></a?>
             <span style="font-size: 22px;">Add New Task</span>
         </div>
-
+        <div id="con_box">
             <div id="container">
             <div class="box" id="box1"><h2>Trip to Paris</h2>
                 <hr><input type="checkbox" checked class="c_box1"><span class="sp">Visit Garden</span></span>
@@ -43,23 +47,24 @@
             
         </div>
     </div>
-    <div id="pop_box">
-        <div id="pop">
-        <div id="p_top">
-            <span>
-                Add New Task
-            </span>
-            <span class="material-symbols-outlined">
+    </div>
+    <div id="overlay">
+        <div id="pop_box">
+            <div id="p_top">
+                <span id="new_tadk" style="font-size:20px;display:inline-block;margin: 1rem 1rem 1rem 1rem;">
+                    Add New Task
+                </span>
+                <span id="close" class="material-symbols-outlined" onclick="history.back()" style="float:right;padding:1rem;pointer:default;">
                 close
                 </span>
+            </div>
+            <div id="p_mid">
+                <input type="text" placeholder="Learn Python" >
+            </div>
+            <div id="p_bottom">
+                <input type="submit" value="+ Add Task">
+            </div>
         </div>
-        <div id="p_mic">
-            <input type="text" placeholder="Learn Python">
-        </div>
-        <div id="p_bottom">
-            <input type="submit" value="+ Add Task">
-        </div>
-    </div>
     </div>
 </body>
 </html>
