@@ -177,6 +177,9 @@ nav{
         nav{
             padding: 1rem 1rem;
         }
+        body{
+            height: 1000px;
+        }
     #container{
         display: flex;
         flex-flow: column wrap;
