@@ -84,7 +84,7 @@ nav{
     display: flex;
     z-index: 2;
 }
-/* Popup box */
+/* Popup box Second Page Only */
 
 #pop_box{
     position: fixed;
@@ -97,6 +97,10 @@ nav{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#close{
+    float:right;padding:1rem;
+    pointer:default;
 }
 #p_top{
     grid-column: 1/-1;
@@ -129,8 +133,41 @@ nav{
     width: 7rem;
     margin-right: 20px;
 }
+/* Add and Back Button Third Page only */
+#add_back{
+    margin: 36px 0px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+    margin: 0px 5rem;
+}
+#box{
+    height: 270px;
+    width: 300px;
+    padding: 2rem;
+    margin: 10px;
+    background-color:white ;
+    box-shadow:0.5px 0.5px 10px #757575,-0.5px -0.5px 10px #757575;
+}
+#con_3{
+    display: flex;
+    justify-content: center;
+}
+/* Media Queries */
 @media only screen and (max-width:1400px){
     #pop_box{
         left: 35%;
+    }
+}
+@media only screen and (max-width:500px){
+    #container{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    #add_new_text{
+        display: none;
     }
 }
