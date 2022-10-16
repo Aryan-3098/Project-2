@@ -19,27 +19,23 @@ nav{
 }
 /* Add New Button */
 #add_new{
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem 5rem 2rem 1rem;
+    margin: 36px 0px;
+    position: relative;
+    left: 80%;
+    height: 62px;
 }
 #add_new:nth-child(2){
     display: flex;
     align-items: center;
 }
 /* Body Container */
-#con_box{
-    display: flex;
-    justify-content: center;
-}
 #container{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    /* display: none; */
-    /* padding-left: 15%; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding-left: 15%;
 }
 
-/* Boxes */
 .box{
     height: 270px;
     width: 300px;
@@ -47,12 +43,7 @@ nav{
     margin: 10px;
     background-color:white ;
 }
-.box:hover{
-    box-shadow:10px 10px 5px #757575;
-}
-.box hr{
-    color: #e6e6e6;
-}
+
 .box h2{
     color: #00A5EC;
     font-size: 23px;
@@ -78,14 +69,4 @@ nav{
 }
 .sp1{
     font-size: 21px;
-}
-/* Popup box */
-#pop_box{
-    position: sticky;
-}
-#pop{
-    height: 15rem;
-    width: 7rem;
-    position: sticky;
-
 }
