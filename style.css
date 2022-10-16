@@ -97,8 +97,9 @@ nav{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 #close{
-    float:right;padding:1rem;
-    pointer : default;
+    float:right;
+    padding:1rem;
+    cursor: default;
 }
 #p_top{
     grid-column: 1/-1;
