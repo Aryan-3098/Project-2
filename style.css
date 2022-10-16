@@ -23,7 +23,7 @@ nav{
     justify-content: flex-end;
     padding: 2rem 5rem 2rem 1rem;
 }
-#add_new:nth-child(2){
+#add_new_text{
     display: flex;
     align-items: center;
 }
@@ -35,8 +35,6 @@ nav{
 #container{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    /* display: none; */
-    /* padding-left: 15%; */
 }
 
 /* Boxes */
@@ -48,7 +46,7 @@ nav{
     background-color:white ;
 }
 .box:hover{
-    box-shadow:10px 10px 5px #757575;
+    box-shadow:0.5px 0.5px 30px #757575,-0.5px 0.5px 5px #757575;
 }
 .box hr{
     color: #e6e6e6;
@@ -140,10 +138,10 @@ nav{
     display: flex;
     justify-content: center;
 }
-#btn_back span{
+/* #btn_back span{
     display: flex;
     align-items: center;
-}
+} */
 .btn{
     display: inline-block;
     margin: 0px 5rem;
