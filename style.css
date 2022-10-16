@@ -46,7 +46,7 @@ nav{
     background-color:white ;
 }
 .box:hover{
-    box-shadow:0.5px 0.5px 30px #757575,-0.5px 0.5px 5px #757575;
+    box-shadow:0.5px 0.5px 30px #00A5EC,-0.5px 0.5px 5px #00A5EC;
 }
 .box hr{
     color: #e6e6e6;
@@ -150,7 +150,7 @@ nav{
     padding: 2rem;
     margin: 10px;
     background-color:white ;
-    box-shadow:0.5px 0.5px 10px #757575,-0.5px -0.5px 10px #757575;
+    box-shadow:0.5px 0.5px 10px #00A5EC,-0.5px -0.5px 10px #00A5EC;
 }
 #con_3{
     display: flex;
