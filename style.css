@@ -79,17 +79,21 @@ nav{
 }
 /* Overlay */
 #overlay{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    height: auto;
     display: flex;
-    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 5;
 }
-/* Popup box Second Page Only */
+/* Popup box Second and Fourth Page  */
 
 #pop_box{
     position: fixed;
-    bottom: 40%;
-    left: 40%;
-    height: 13rem;
-    width: 25rem;
+    width: 30%;
     border-radius: 10px;
     background-color: white;
     display: grid;
@@ -132,7 +136,7 @@ nav{
     width: 7rem;
     margin-right: 20px;
 }
-/* Add and Back Button Third Page only */
+/* ----------------------------------------------------Add and Back Button Third and FourthPage----------------------------------------- */
 #add_back{
     margin: 36px 0px;
     height: 62px;
@@ -156,31 +160,49 @@ nav{
     display: flex;
     justify-content: center;
 }
-/* Media Queries */
-@media only screen and (max-width:1400px){
-    #pop_box{
-        left: 35%;
-    }
-}
-@media only screen and (max-width:1280px) and (min-width:501px){
+/* ------------------------------------------------------------Media Queries--------------------------------------------------------- */
+@media only screen and (max-width:1200px) and (min-width:778px){
     #container{
         display: grid;
-        grid-template-columns: repeat(auto-fit,100px);
+        grid-template-columns: repeat(2,auto);
     }
     #main{
-        height: 1000px;
+        height: 1500px;
     }
 }
-@media only screen and (max-width:500px)and (min-width:50px){
+@media only screen and (max-width:777px) and (min-width:609px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
     #main{
-        height: 100%;
+        height: 2000px;
+    }
+    #pop_box{
+        width: auto;
+        margin: 15%;
+    }
+}
+
+@media only screen and (max-width:608px)and (min-width:355px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    .box{
+        height: 250px;
+        width: 270px;
+    }
+    #main{
+        width: 100%;
+        height: 2000px;
         }
-        nav{
-            padding: 1rem 1rem;
-        }
-        body{
-            height: 1000px;
-        }
+    nav{
+        padding: 1rem 1rem;
+    }
+    body{
+        height: 1000px;
+    }
     #container{
         display: flex;
         flex-flow: column wrap;
@@ -190,10 +212,72 @@ nav{
         visibility: hidden;;
     }
     #pop_box{
-    position: fixed;
-    bottom: 40%;
-    left: 13%;
-    width: 23rem;
-    height: 18rem;
+        width: auto;
+        margin: 15%;
     }
-}       
+} 
+@media only screen and (max-width:354px)and (min-width:299px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    .box{
+        height: auto;
+        width: auto;
+    }
+    #main{
+        width: 100%;
+        height: 2000px;
+        }
+    nav{
+        padding: 1rem 1rem;
+    }
+    body{
+        height: 1000px;
+    }
+    #container{
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+    #add_new_text{
+        visibility: hidden;;
+    }
+    #pop_box{
+        width: auto;
+        margin: 15%;
+    }
+}
+@media only screen and (max-width:298px)and (min-width:50px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    .box{
+        height: auto;
+        width: auto;
+    }
+    #main{
+        width: 100%;
+        height: 2000px;
+        }
+    nav{
+        padding: 1rem 1rem;
+    }
+    body{
+        height: 1000px;
+    }
+    #container{
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+    #add_new_text{
+        visibility: hidden;;
+    }
+    #pop_box{
+        width: auto;
+        margin: 5%;
+    }
+}
+
